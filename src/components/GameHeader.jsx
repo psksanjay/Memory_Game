@@ -1,0 +1,17 @@
+
+
+export const GameHeader = ({Score,Moves,onReset}) => {
+    return <div className="game-header">
+        <h1>🎮 Memory Card Game</h1>
+        <div className="stats">
+            <div className="stat-item">
+                <span className="stat-label">Score:</span> 
+                <span className="stat-value"> {Score}</span></div>
+            <div className="stat-item">
+                <span className="stat-label">Moves:</span>
+                <span className="stat-value">{Moves}</span>
+            </div>
+            </div>
+            <button className="reset-btn" onClick={onReset}>New Game</button>
+        </div>
+}
